@@ -1,0 +1,5 @@
+Django==4.1.7
+djangorestframework==3.14.0
+pytube==15.0.0
+polls==0.1
+Faker==18.6.0
