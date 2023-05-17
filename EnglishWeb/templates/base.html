@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temporary title</title>
+    <link rel="stylesheet" href="{% static 'css/base_style.css' %}" />
+</head>
+<body>
+    <div class="base-container">
+        <div class="base-header">
+            <div class="base-logo">
+                <h1>This is img</h1>
+            </div>
+            <div>
+                <ul class="base-ul">
+                    <li class="base-li"><a class="active" href="{% url 'homepage:home' %}">Home</a> </li>
+                    <li class="base-li"><a href="#gameguides">Game guides</a> </li>
+                    <li class="base-li"><a href="#example">Example</a> </li>
+                    <li class="base-li"><a href="{% url 'download_youtube:youtube_downloader' %}">Youtube Download</a> </li>
+                    <li class="base-li"><a href="#about">About</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            {% block child_block %}
+            {% endblock %}
+        </div>
+    </div>
+
+
+</body>
+</html>

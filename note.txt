@@ -1,0 +1,19 @@
+1: To create new project
+django-admin startproject [project]
+
+2: Run server:
+python manage.py runserver
+
+3: Create new app in project:
+python manage.py startapp [app_name]
+
+4: Migrate database:
+python manage.py migrate
+python manage.py makemigrations [app_name]
+
+5: Make superuser:
+pyhon manage.py createsuperuser
+Username: tinhhoang
+Password: ...
+Password( again): ...
+
