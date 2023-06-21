@@ -1,33 +1,14 @@
 <!DOCTYPE html>
+{% extends "base.html" %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Django level two</title>
-    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}" />
-</head>
-<body>
-    <h1>Hi welcome to django level two</h1>
-<h2>Here are your access record:</h2>
-<div class="djangotwo">
-    {% if access_records %}
-    <table>
-        <thead>
-            <th>Site name</th>
-            <th>Date accessed</th>
-        </thead>
-    {% for acc in access_records %}
-    <tr>
-        <td>{{ acc.name }}</td>
-        <td>{{ acc.date }}</td>
-    </tr>
-    {% endfor %}
-    </table>
-    {% else %}
-    <p>No access records found!</p>
-    {% endif %}
-
-</div>
-
-</body>
-</html>
+{% block title %}
+First app
+{% endblock %}
+{% block menu %}
+<li class=" home-page-li"><a class="active" href="{% url 'first_app:signup' %}">Sign up</a></li>
+<li class=" home-page-li"><a href="{% url 'first_app:login' %}">Login</a></li>
+<li class=" home-page-li"><a href="{% url 'first_app:logout' %}">Log out</a></li>
+<li class=" home-page-li"><a href="#item4">Item 4</a></li>
+{% endblock %}
+{% block content %}
+{% endblock %}

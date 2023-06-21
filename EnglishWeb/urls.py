@@ -20,10 +20,11 @@ from django.urls import re_path as url
 from django.urls import include
 
 urlpatterns = [
-    url(r'^$', include('home_page.urls')),
-    url(r'^first_app', include('first_app.urls')),
-    url(r'^demoform', include('demoform.urls')),
-    url(r'^download_youtube', include('download_youtube.urls')),
-    url(r'^restapi', include('rest_api.urls')),
+    url(r'^', include('home_page.urls')),
+    url(r'^first_app/', include('first_app.urls')),
+    url(r'^demoform/', include('demoform.urls')),
+    url(r'^download_youtube/', include('download_youtube.urls')),
+    url(r'^restapi/', include('rest_api.urls')),
+    url(r'^coin_gas_station/', include('coin_gas_station.urls')),
     path('admin/', admin.site.urls),
 ]

@@ -1,2 +1,14 @@
 <!DOCTYPE html>
-{% extends 'home_page/index.html' %}
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Trang chủ
+{% endblock %}
+{% block menu %}
+<li class=" home-page-li"><a class="active" href="{% url 'download_youtube:dashboard' %}">Dash board</a></li>
+<li class=" home-page-li"><a href="#">Detail</a></li>
+<li class=" home-page-li"><a href="#item3">Item 3</a></li>
+<li class=" home-page-li"><a href="#item4">Item 4</a></li>
+{% endblock %}
+{% block content %}
+{% endblock %}

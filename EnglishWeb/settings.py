@@ -33,7 +33,12 @@ SECRET_KEY = 'django-insecure-+c^h1!%^5go5u+gcdh9&=izzum)%drym(nl7)kgumm87tiy-2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.111']
+ALLOWED_HOSTS = ['192.168.0.111', 'localhost', '127.0.0.1']
+
+
+LOGIN_URL = 'first_app:login'
+LOGIN_REDIRECT = 'homepage:home'
+LOGOUT_REDIRECT = 'homepage:home'
 
 
 # Application definition
@@ -51,6 +56,7 @@ INSTALLED_APPS = [
     'download_youtube',
     'rest_framework',
     'rest_api',
+    'coin_gas_station',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +68,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'sesame.backends.ModelBackend',
+]
+
+LOGGING_CONFIG = None
+LOGGING = None
 
 ROOT_URLCONF = 'EnglishWeb.urls'
 

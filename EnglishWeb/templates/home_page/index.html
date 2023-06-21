@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% load static %}
-{% block child_block %}
-<link rel="stylesheet" href="{% static 'css/homepage_index.css' %}"/>
-<div class="home-page-container">
-    <div class="home-page-menu">
-        <ul class="home-page-ul">
-            <li class=" home-page-li"><a class="active" href="#item1">Item 1</a></li>
-            <li class=" home-page-li"><a href="#item2">Item 2</a></li>
-            <li class=" home-page-li"><a href="#item3">Item 3</a></li>
-            <li class=" home-page-li"><a href="#item4">Item 4</a></li>
-        </ul>
-    </div>
-    <div class="home-page-content-container">
-        <h1>Content</h1>
-    </div>
-</div>
+{% block title %}
+Trang chủ
+{% endblock %}
+{% block menu %}
+<li class=" home-page-li"><a class="active" href="#item1">Item 1</a></li>
+<li class=" home-page-li"><a href="#item2">Item 2</a></li>
+<li class=" home-page-li"><a href="#item3">Item 3</a></li>
+<li class=" home-page-li"><a href="#item4">Item 4</a></li>
 {% endblock %}
