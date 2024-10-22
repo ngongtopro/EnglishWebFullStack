@@ -1,4 +1,4 @@
-Django==4.1.7
+django
 djangorestframework==3.14.0
 pytube==15.0.0
 polls==0.1

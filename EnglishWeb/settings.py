@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_api',
     'coin_gas_station',
-    'logistic_orders',
 ]
 
 MIDDLEWARE = [

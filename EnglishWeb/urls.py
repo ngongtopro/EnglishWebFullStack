@@ -26,6 +26,5 @@ urlpatterns = [
     url(r'^download_youtube/', include('download_youtube.urls')),
     url(r'^restapi/', include('rest_api.urls')),
     url(r'^coin_gas_station/', include('coin_gas_station.urls')),
-    url(r'^logistic_orders/', include('logistic_orders.urls')),
     path('admin/', admin.site.urls),
 ]
