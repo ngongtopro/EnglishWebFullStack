@@ -5,3 +5,4 @@ polls==0.1
 Faker==18.6.0
 websockets==11.0.3
 django-sesame==3.1
+psycopg2

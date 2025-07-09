@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'download_youtube',
     'rest_framework',
     'rest_api',
-    'coin_gas_station',
+    'new_polls'
 ]
 
 MIDDLEWARE = [
@@ -103,10 +103,15 @@ WSGI_APPLICATION = 'EnglishWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'learndatabase',
+    'USER': 'postgres',
+    'PASSWORD': '123456',
+    'HOST': '127.0.0.1',
+    'PORT': '5432',
     }
 }
+
 
 
 # Password validation
