@@ -1,8 +1,11 @@
 1: To create new project
 django-admin startproject [project]
 
-2: Run server:
+2:  Run server:
 python manage.py runserver
+    Chạy server truy cập được vào LAN:
+python manage.py runserver 0.0.0.0:[port]
+Ex: python manage.py runserver 0.0.0.0:8000
 
 3: Create new app in project:
 python manage.py startapp [app_name]
@@ -17,3 +20,6 @@ Username: tinhhoang
 Password: ...
 Password( again): ...
 
+6. OpenAI api key: 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
+
+7. 

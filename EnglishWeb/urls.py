@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^download_youtube/', include('download_youtube.urls')),
     url(r'^restapi/', include('rest_api.urls')),
     url(r'^new_polls/', include('new_polls.urls')),
+    url(r'^chatbot/', include('chatbot.urls')),
     path('admin/', admin.site.urls),
 ]

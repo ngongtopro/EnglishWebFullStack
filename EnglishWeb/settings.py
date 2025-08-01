@@ -31,9 +31,10 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'django-insecure-+c^h1!%^5go5u+gcdh9&=izzum)%drym(nl7)kgumm87tiy-2('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.0.111', 'localhost', '127.0.0.1']
+
+ALLOWED_HOSTS = ['192.168.0.111', 'localhost', '127.0.0.1', '10.10.23.65', '10.10.23.241']
 
 
 LOGIN_URL = 'first_app:login'
@@ -56,7 +57,8 @@ INSTALLED_APPS = [
     'download_youtube',
     'rest_framework',
     'rest_api',
-    'new_polls'
+    'new_polls',
+    'chatbot'
 ]
 
 MIDDLEWARE = [
